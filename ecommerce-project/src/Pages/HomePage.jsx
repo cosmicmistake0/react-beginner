@@ -1,7 +1,11 @@
+import axios from "axios";
 import { Header } from "../assets/components/Header";
 import { products } from "../../sarting-code/data/products";
 import "./HomePage.css";
 export function HomePage() {
+  axios.get("https://localhost:3000/api/products").then((response) => {
+    response.data;
+  });
   return (
     <>
       <title>Ecommerce Project</title>
